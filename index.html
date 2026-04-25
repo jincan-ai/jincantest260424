@@ -1,19 +1,134 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로또 번호 추천</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pitch</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <button id="theme-toggle" class="theme-toggle">다크 모드</button>
-    <div class="container">
-        <h1>로또 번호 추천</h1>
-        <p>버튼을 눌러 로또 번호를 받아보세요.</p>
-        <div id="lotto-numbers" class="lotto-numbers"></div>
-        <button id="generate-btn">번호 생성</button>
+
+  <nav>
+    <a href="index.html"><strong>Pitch</strong></a>
+    <div>
+      <a href="index.html">Events</a>
+      <a href="vendor.html">Vendors</a>
+      <a href="post-event.html">Post an Event</a>
+      <a href="register.html">Register Your Truck</a>
     </div>
-    <script src="main.js"></script>
+  </nav>
+
+  <main>
+
+    <section>
+      <h1>Find your spot.</h1>
+      <p>Vancouver's platform connecting food trucks with events — and events with hungry people.</p>
+    </section>
+
+    <hr />
+
+    <!-- 벤더 모집 중인 행사 -->
+    <section>
+      <h2>Events accepting vendor applications</h2>
+      <p>Apply to participate as a food vendor.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Vendor spots</th>
+            <th>Deadline</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="event.html">White Rock Night Market</a></td>
+            <td>May 1</td>
+            <td>White Rock, BC</td>
+            <td>12</td>
+            <td>Apr 28</td>
+            <td><a href="apply.html">Apply →</a></td>
+          </tr>
+          <tr>
+            <td><a href="event.html">Shipyards Night Market</a></td>
+            <td>May 15 – Sep 11 (weekly)</td>
+            <td>Shipbuilders' Square, North Van</td>
+            <td>8 / night</td>
+            <td>May 9</td>
+            <td><a href="apply.html">Apply →</a></td>
+          </tr>
+          <tr>
+            <td><a href="event.html">Chilliwack Ribfest 2026</a></td>
+            <td>Jul 24 – 26</td>
+            <td>Vedder River Park, Chilliwack</td>
+            <td>10</td>
+            <td>Jun 20</td>
+            <td><a href="apply.html">Apply →</a></td>
+          </tr>
+          <tr>
+            <td><a href="event.html">White Rock Night Market</a></td>
+            <td>Jun 5</td>
+            <td>White Rock, BC</td>
+            <td>12</td>
+            <td>May 30</td>
+            <td><a href="apply.html">Apply →</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr />
+
+    <!-- 확정된 행사 라인업 -->
+    <section>
+      <h2>Upcoming events — confirmed vendor lineups</h2>
+      <p>See which food trucks will be at each event.</p>
+
+      <div class="event-list">
+
+        <div class="event-card">
+          <div>
+            <strong><a href="event.html">Chilliwack Party in the Park</a></strong>
+            <span> · Apr 25–26 · Chilliwack, BC</span>
+          </div>
+          <div class="vendor-tags">
+            <a href="vendor.html">Stackers YVR</a>
+            <a href="vendor.html">Taco Libre</a>
+            <a href="vendor.html">Seoul Bowl</a>
+            <span>+4 more</span>
+          </div>
+          <div>
+            <a href="event.html">View full lineup →</a>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div>
+            <strong><a href="event.html">Food Truck Wars — Cloverdale</a></strong>
+            <span> · Apr 10–12 · Cloverdale Exhibition Grounds, Surrey</span>
+          </div>
+          <div class="vendor-tags">
+            <a href="vendor.html">Viet Good</a>
+            <a href="vendor.html">Smoky's BBQ</a>
+            <a href="vendor.html">The Waffle Bus</a>
+            <span>+6 more</span>
+          </div>
+          <div>
+            <a href="event.html">View full lineup →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Pitch · Vancouver, BC · <a href="mailto:jincan9726@gmail.com">jincan9726@gmail.com</a></p>
+  </footer>
+
 </body>
 </html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply as Vendor · Pitch</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html"><strong>Pitch</strong></a>
+    <div>
+      <a href="index.html">Events</a>
+      <a href="vendor.html">Vendors</a>
+      <a href="post-event.html">Post an Event</a>
+      <a href="register.html">Register Your Truck</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <p><a href="event.html">← Back to event</a></p>
+
+    <section>
+      <h1>Apply as a vendor</h1>
+      <p>Applying for: <strong>Richmond Night Market 2026</strong> · May 10 · Richmond, BC</p>
+    </section>
+
+    <hr />
+
+    <section>
+      <form onsubmit="handleSubmit(event)">
+        <h2>Your truck</h2>
+
+        <label for="truck-name">Truck / business name *</label><br />
+        <input type="text" id="truck-name" name="truck-name" required /><br /><br />
+
+        <label for="cuisine">Cuisine type *</label><br />
+        <input type="text" id="cuisine" name="cuisine" placeholder="e.g. Korean, Mexican, Dessert" required /><br /><br />
+
+        <label for="instagram">Instagram handle</label><br />
+        <input type="text" id="instagram" name="instagram" placeholder="@yourhandle" /><br /><br />
+
+        <label for="website">Website or menu link</label><br />
+        <input type="url" id="website" name="website" /><br /><br />
+
+        <hr />
+        <h2>Contact</h2>
+
+        <label for="contact-name">Your name *</label><br />
+        <input type="text" id="contact-name" name="contact-name" required /><br /><br />
+
+        <label for="email">Email *</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="phone">Phone</label><br />
+        <input type="tel" id="phone" name="phone" /><br /><br />
+
+        <hr />
+        <h2>About your setup</h2>
+
+        <label for="setup">What's your setup? (truck, tent, cart, etc.) *</label><br />
+        <input type="text" id="setup" name="setup" required /><br /><br />
+
+        <label for="space">Space required (approx. ft²)</label><br />
+        <input type="text" id="space" name="space" placeholder="e.g. 10x10" /><br /><br />
+
+        <label for="power">Do you need power access?</label><br />
+        <select id="power" name="power">
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select><br /><br />
+
+        <label for="message">Anything else the organizer should know?</label><br />
+        <textarea id="message" name="message" rows="4"></textarea><br /><br />
+
+        <button type="submit">Submit application →</button>
+      </form>
+
+      <div id="success-msg" style="display:none; margin-top:24px; padding:20px 24px; background:#f0fdf4; border:1px solid #bbf7d0; border-radius:12px; color:#15803d; font-weight:500;">
+        Application submitted! We'll forward it to the event organizer within 24 hours.
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Pitch · Vancouver, BC · <a href="mailto:jincan9726@gmail.com">jincan9726@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>

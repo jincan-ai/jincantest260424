@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register Your Truck · Pitch</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html"><strong>Pitch</strong></a>
+    <div>
+      <a href="index.html">Events</a>
+      <a href="vendor.html">Vendors</a>
+      <a href="post-event.html">Post an Event</a>
+      <a href="register.html">Register Your Truck</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <section>
+      <h1>Register your truck</h1>
+      <p>Join Pitch and start receiving event invitations from organizers across Vancouver.</p>
+    </section>
+
+    <hr />
+
+    <section>
+      <form onsubmit="handleSubmit(event)">
+        <h2>Your truck</h2>
+
+        <label for="truck-name">Truck / business name *</label>
+        <input type="text" id="truck-name" name="truck-name" required />
+
+        <label for="cuisine">Cuisine type *</label>
+        <input type="text" id="cuisine" name="cuisine" placeholder="e.g. Korean, Mexican, Dessert" required />
+
+        <label for="instagram">Instagram handle</label>
+        <input type="text" id="instagram" name="instagram" placeholder="@yourhandle" />
+
+        <label for="website">Website or menu link</label>
+        <input type="url" id="website" name="website" />
+
+        <label for="description">Tell us about your truck</label>
+        <textarea id="description" name="description" rows="4" placeholder="What makes your food truck unique?"></textarea>
+
+        <hr />
+        <h2>Contact</h2>
+
+        <label for="contact-name">Your name *</label>
+        <input type="text" id="contact-name" name="contact-name" required />
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" />
+
+        <hr />
+        <h2>Operations</h2>
+
+        <label for="setup">Setup type *</label>
+        <input type="text" id="setup" name="setup" placeholder="e.g. food truck, tent, cart" required />
+
+        <label for="space">Typical space required</label>
+        <input type="text" id="space" name="space" placeholder="e.g. 10x20 ft" />
+
+        <label for="cities">Areas you operate in</label>
+        <input type="text" id="cities" name="cities" placeholder="e.g. Vancouver, Burnaby, Richmond" />
+
+        <button type="submit">Register →</button>
+      </form>
+
+      <div id="success-msg" style="display:none; margin-top:24px; padding:20px 24px; background:#f0fdf4; border:1px solid #bbf7d0; border-radius:12px; color:#15803d; font-weight:500;">
+        You're registered! We'll be in touch when relevant events open up near you.
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Pitch · Vancouver, BC · <a href="mailto:jincan9726@gmail.com">jincan9726@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post an Event · Pitch</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html"><strong>Pitch</strong></a>
+    <div>
+      <a href="index.html">Events</a>
+      <a href="vendor.html">Vendors</a>
+      <a href="post-event.html">Post an Event</a>
+      <a href="register.html">Register Your Truck</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <section>
+      <h1>Post your event</h1>
+      <p>Looking for food vendors? List your event here and receive applications from Vancouver's best food trucks.</p>
+    </section>
+
+    <hr />
+
+    <section>
+      <form onsubmit="handleSubmit(event)">
+        <h2>Event details</h2>
+
+        <label for="event-name">Event name *</label><br />
+        <input type="text" id="event-name" name="event-name" required /><br /><br />
+
+        <label for="event-date">Date *</label><br />
+        <input type="date" id="event-date" name="event-date" required /><br /><br />
+
+        <label for="event-time">Time</label><br />
+        <input type="text" id="event-time" name="event-time" placeholder="e.g. 11am – 8pm" /><br /><br />
+
+        <label for="location">Location *</label><br />
+        <input type="text" id="location" name="location" placeholder="Address or venue name" required /><br /><br />
+
+        <label for="attendance">Expected attendance</label><br />
+        <select id="attendance" name="attendance">
+          <option value="">Select range</option>
+          <option value="under-500">Under 500</option>
+          <option value="500-2000">500 – 2,000</option>
+          <option value="2000-5000">2,000 – 5,000</option>
+          <option value="5000+">5,000+</option>
+        </select><br /><br />
+
+        <label for="description">Event description</label><br />
+        <textarea id="description" name="description" rows="4"></textarea><br /><br />
+
+        <hr />
+        <h2>Vendor spots</h2>
+
+        <label for="spots">Number of vendor spots available *</label><br />
+        <input type="number" id="spots" name="spots" min="1" required /><br /><br />
+
+        <label for="deadline">Application deadline *</label><br />
+        <input type="date" id="deadline" name="deadline" required /><br /><br />
+
+        <label for="fee">Vendor participation fee (if any)</label><br />
+        <input type="text" id="fee" name="fee" placeholder="e.g. $150 / day, or Free" /><br /><br />
+
+        <label for="requirements">Requirements or notes for applicants</label><br />
+        <textarea id="requirements" name="requirements" rows="3" placeholder="e.g. must have food safe certification, no deep fryers, etc."></textarea><br /><br />
+
+        <hr />
+        <h2>Organizer contact</h2>
+
+        <label for="org-name">Organizer / company name *</label><br />
+        <input type="text" id="org-name" name="org-name" required /><br /><br />
+
+        <label for="org-email">Email *</label><br />
+        <input type="email" id="org-email" name="org-email" required /><br /><br />
+
+        <label for="org-phone">Phone</label><br />
+        <input type="tel" id="org-phone" name="org-phone" /><br /><br />
+
+        <button type="submit">Post event →</button>
+      </form>
+
+      <div id="success-msg" style="display:none; margin-top:24px; padding:20px 24px; background:#f0fdf4; border:1px solid #bbf7d0; border-radius:12px; color:#15803d; font-weight:500;">
+        Event posted! We'll review it and publish within 24 hours.
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Pitch · Vancouver, BC · <a href="mailto:jincan9726@gmail.com">jincan9726@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>
